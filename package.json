@@ -1,0 +1,31 @@
+{
+  "name": "tweeterJS",
+  "version": "1.0.0",
+  "description": "show 25 most recent tweets by any user",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theavish/tweeter.git"
+  },
+  "author": "Avi Samloff <avi.samloff@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theavish/tweeter/issues"
+  },
+  "homepage": "https://github.com/theavish/tweeter#readme",
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "bower": "^1.7.7",
+    "express": "^4.13.4",
+    "request": "^2.69.0",
+    "twitter-js-client": "0.0.5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "tweeterJS",
+  "homepage": "https://github.com/theavish/tweeter",
+  "authors": [
+    "Avi Samloff <avi.samloff@gmail.com>"
+  ],
+  "description": "show 25 most recent tweets by any user",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-ui-router": "^0.2.17",
+    "angular-bootstrap": "^1.1.1",
+    "bootstrap": "^3.3.6"
+  }
+}

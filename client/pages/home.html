@@ -1,0 +1,17 @@
+<div>
+  <form class="form" ng-submit="tweet.getTweets(name, count)">
+    <input type="text" placeholder="twitter handle" ng-model="name" />
+    <input type="number" placeholder="number of tweets" ng-model="count" />
+    <button>submit</button>
+  </form>
+  <div class="tweet-container">
+    <h3 ng-show="tweet.tweets[0].username">{{tweet.tweets.length}} Latest Tweets From @{{tweet.tweets[0].username}} <img class="pic" height="100px" ng-src="{{tweet.tweets[0].pic}}"></h3>
+    <div class="tweets">
+      <div class="item" ng-repeat="item in tweet.tweets">
+        <p>on {{item.date}}, at {{item.time}}:</p>
+        <p>{{item.text}}</p>
+        <p><img class="icon" ng-src="{{tweet.icons.retweet}}"> {{item.retweets}} | <img class="icon" ng-src="{{tweet.icons.favorite}}"> {{item.favorites}}</p>
+      </div>
+    </div>
+  </div>
+</div>
