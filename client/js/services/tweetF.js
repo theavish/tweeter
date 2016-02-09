@@ -8,7 +8,7 @@ app.factory('tweetF', ['server', '$http', function(server, $http) {
       count: count || 25
     };
 
-    return $http.post(server + '/getTweets', parameters)
+    return $http.post('/getTweets', parameters)
       .then(function success(response) {
         return response.data;
       });
