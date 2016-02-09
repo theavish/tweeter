@@ -1,4 +1,4 @@
-app.factory('tweetF', ['server', '$http', function(server, $http) {
+app.factory('tweetF', ['$http', function($http) {
 
 
   var getTweets = function(name, count) {

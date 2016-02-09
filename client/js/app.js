@@ -1,3 +1,1 @@
-var app = angular.module('tweeterJS', ['ui.router', 'ui.bootstrap'])
-
-.constant('server', 'http://localhost:8000');
+var app = angular.module('tweeterJS', ['ui.router', 'ui.bootstrap']);

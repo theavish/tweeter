@@ -8,6 +8,7 @@ app.controller('tweetC', ['$scope', 'tweetF', function($scope, tweetF) {
 
 
   self.getTweets = function(name, count) {
+    self.tweets = [];
     console.log('retrieving the last ' + count + ' tweets from ' + name);
     tweetF.getTweets(name, count).then(function(data) {
       console.log(data);
