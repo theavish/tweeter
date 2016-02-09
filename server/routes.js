@@ -8,7 +8,7 @@ var jsonParser = bodyParser.json();
 router.post('/getTweets', jsonParser, function(req, res) {
   var name = req.body.name;
   var count = req.body.count;
-  console.log('retrieving the last ' + count + ' tweets from ' + name)
+  console.log('retrieving the last ' + count + ' tweets from ' + name);
   config.twitter.getUserTimeline({
     screen_name: name,
     count: count
